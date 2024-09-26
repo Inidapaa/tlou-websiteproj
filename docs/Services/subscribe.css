@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    gap: 930px;
+    height: 3vh;
+    background-color: rgba(251, 251, 251, 0.568);
+    padding-top: 3px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    z-index: 2;
+}
+
+.judul {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.judul h2 span{
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+.menu li a {
+    color: black;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: #807f7f;
+}
+
+.tombol {
+    display: none;
+    color: black;
+    font-size: 1rem;
+}
+
+.tombol:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        gap: 550px;
+        padding-top: 0px;
+
+    }
+
+    .tombol {
+        display: block;
+        padding-top: 4px;
+    }
+
+    .menu.aktif {
+        display: inline-block;
+        position: absolute;
+        top: 30px;
+        background: linear-gradient(to bottom, white, rgb(217, 217, 217, 0.9));
+        padding: 10px 20px;
+        right: 0;
+        left: 0;
+    }
+
+    .menu.aktif li a:hover {
+        color: #807f77;
+    }
+
+    .menu.aktif li a{
+        padding: 10px;
+        display: inline-block !important;
+    }
+}
+
+.layanan-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.layanan-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.layanan-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.layanan-table th, .layanan-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.layanan-table th {
+    background-color: grey;
+    color: white;
+}
+
+.layanan-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.layanan-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.layanan-table td {
+    font-size: 1rem;
+}

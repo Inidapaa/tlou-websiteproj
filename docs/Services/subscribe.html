@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="subscribe.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="judul">
+        <h2>TheLastofUs<span>.com</span></h2>
+      </div>
+      <ul class="menu">
+        <li><a href="../index.html#home">Home</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#products">Products</a></li>
+        <li><a href="#">Subscribe</a></li>
+        <li><a href="../Contact/contact.html">Contact Us</a></li>
+      </ul>
+      <div class="tombol">&#9776;</div>
+    </nav>
+    <section class="layanan-section" id="layanan">
+      <h2>Subscribe</h2>
+      <table class="layanan-table">
+        <thead>
+          <tr>
+            <th>Number</th>
+            <th>Subscribe</th>
+            <th>Description</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th>1</th>
+            <th>1 Month Basic</th>
+            <th>The Last Of Us Part 1, The Last Of Us Part 2</th>
+            <th>$12.00</th>
+          </tr>
+        </thead>
+        <thead>
+          <tr>
+            <th>2</th>
+            <th>1 Month Ultimate</th>
+            <th>
+              The Last Of Us Part 1, The Last Of Us Part 2, The Last Of Us
+              Series
+            </th>
+            <th>$20.00</th>
+          </tr>
+        </thead>
+      </table>
+    </section>
+    <script type="text/javascript">
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>
